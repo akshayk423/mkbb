@@ -3,3 +3,4 @@ Mechanical Keyboard Builder, a web application for building/finding keyboard par
 
 
 ## Setup
+### Configuring Apache Tomcat Server
