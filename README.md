@@ -6,12 +6,6 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Database Schema](#database-schema)
-- [Known Issues](#known-issues)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - **User Authentication**: Register and log in securely.
@@ -21,6 +15,7 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
 - **Session Management**: Maintain active user sessions while keeping database connections secure.
 - **Sign Out**: Securely sign out users, clearing only user-specific session attributes.
 - **Listing Moderation**: Moderators can sign in using the Mod Login feature and remove listings that are reported by users
+  
 ## Technology Stack
 - **Backend**: Java (Servlets, JSP)
 - **Frontend**: HTML, CSS, JavaScript
@@ -41,27 +36,14 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
    - Extract the downloaded archive to a suitable location on your system.
    - Set the `CATALINA_HOME` environment variable to the path of your Tomcat installation.
    
-3. **Configure Tomcat for Your Project**:
-   - Navigate to the `conf` directory in your Tomcat installation.
-   - Open `server.xml` and ensure the following:
-     - The port is set correctly (default is 8080).
-     - `<Context>` configuration (if needed) can be added under `<Host>`.
-   - Place your `.war` file in the `webapps` directory.
+3. **Importing project files**:
+   - Navigate to the `webapps/ROOT` directory in your Tomcat installation.
+   - Copy `Mechanical_Keyboard_Builder` into the current directory.
+   - Open `/WEB-INF` and copy the contents into the corresponding folder.
 
 4. **Starting Tomcat**:
-   - Use the following command in your terminal:
-     ```bash
-     <CATALINA_HOME>/bin/startup.sh   # For Unix/Linux
-     <CATALINA_HOME>\bin\startup.bat  # For Windows
-     ```
-   - Access your application at `http://localhost:8080/Mechanical_Keyboard_Builder`.
-
-5. **Stopping Tomcat**:
-   - Use the following command:
-     ```bash
-     <CATALINA_HOME>/bin/shutdown.sh   # For Unix/Linux
-     <CATALINA_HOME>\bin\shutdown.bat  # For Windows
-     ```
+   - Navigate to the `/bin` folder in the Tomcat folder and run `startup.bat` 
+   - Access your application at `http://localhost:8080/mkbb`.
 
 ### Setting Up MySQL Workbench
 1. **Download MySQL Workbench**:
@@ -82,15 +64,8 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
    - Test the connection to ensure everything is working correctly.
 
 4. **Setting Up the Database**:
-   - Use the `schema.sql` file provided in the `sql` folder to create the necessary tables.
+   - Use the `schema.sql` file provided to create the necessary tables.
    - Open the script in MySQL Workbench and execute it to initialize the database.
-
-5. **Grant Permissions** (if necessary):
-   - Run the following SQL command to grant privileges to your user:
-     ```sql
-     GRANT ALL PRIVILEGES ON mkdb.* TO 'yourUser'@'localhost' IDENTIFIED BY 'yourPassword';
-     FLUSH PRIVILEGES;
-     ```
 
 ### Connecting Your Application to MySQL
 - Ensure that your `config.properties` file includes the correct database URL, username, and password.
