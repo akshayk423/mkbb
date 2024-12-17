@@ -31,7 +31,7 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
 ## Setup and Installation
 1. **Clone the Repository**:
    ```bash
-   git clone 
+   git clone https://github.com/akshayk423/mkbb.git
    cd mechanical-keyboard-builder
 ### Setting Up Apache Tomcat
 1. **Download Apache Tomcat**:
