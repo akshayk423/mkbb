@@ -20,7 +20,7 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
 - **Bookmarking**: Save and manage bookmarks for different builds.
 - **Session Management**: Maintain active user sessions while keeping database connections secure.
 - **Sign Out**: Securely sign out users, clearing only user-specific session attributes.
-
+- **Listing Moderation**: Moderators can sign in using the Mod Login feature and remove listings that are reported by users
 ## Technology Stack
 - **Backend**: Java (Servlets, JSP)
 - **Frontend**: HTML, CSS, JavaScript
@@ -31,7 +31,7 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
 ## Setup and Installation
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/mechanical-keyboard-builder.git
+   git clone 
    cd mechanical-keyboard-builder
 ### Setting Up Apache Tomcat
 1. **Download Apache Tomcat**:
