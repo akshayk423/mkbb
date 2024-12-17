@@ -34,7 +34,6 @@ Mechanical Keyboard Builder is a web application designed to help enthusiasts co
    
 2. **Install and Configure**:
    - Extract the downloaded archive to a suitable location on your system.
-   - Set the `CATALINA_HOME` environment variable to the path of your Tomcat installation.
    
 3. **Importing project files**:
    - Navigate to the `webapps/ROOT` directory in your Tomcat installation.
